@@ -16,7 +16,7 @@
 
 #注意： 
 
-	要修改url地址，改为自己联网的本机ip地址
+		要修改url地址，改为自己联网的本机ip地址
 
        修改服务器的语料库地址，本项目在C:\Users\Lenovo\Desktop\cankao\Reduced-fenci目录下，相关代码修改在impl包的JieBaImpl.java下
       
