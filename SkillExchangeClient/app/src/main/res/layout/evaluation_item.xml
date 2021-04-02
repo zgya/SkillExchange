@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <com.jit.zgy.skillexchange.view.CircleImageView
+        android:id="@+id/e_uavatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/default_personal_image"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/e_uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MyName"
+        android:layout_below="@+id/e_uavatar"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/e_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/e_uavatar"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        android:text="这是用户对达人或者对用户的评价"/>
+</RelativeLayout>

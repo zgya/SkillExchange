@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TaskCleanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/td_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/back"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="清洁打扫"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:id="@+id/tc_line"
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务标标题"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="请输入任务标题"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务类型"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/et_categeory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="请输入任务类型"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bt_tcetegeory1"
+            android:layout_width="60dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="30dp"
+            android:text="别墅"/>
+
+         <Button
+             android:id="@+id/bt_tcetegeory2"
+             android:layout_width="60dp"
+             android:layout_height="38dp"
+             android:layout_toRightOf="@id/bt_tcetegeory1"
+             android:layout_marginLeft="10dp"
+             android:text="公寓"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务清洁标准"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/et_standard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="退房清洁"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/bt_tstandard1"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="30dp"
+                android:text="退房清洁"/>
+
+            <Button
+                android:id="@+id/bt_tstandard2"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_toRightOf="@id/bt_tstandard1"
+                android:layout_marginLeft="10dp"
+                android:text="商业清洁"/>
+
+            <Button
+                android:id="@+id/bt_tstandard3"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_toRightOf="@id/bt_tstandard2"
+                android:layout_marginLeft="10dp"
+                android:text="日常保洁"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tc_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卧室数量"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"/>
+
+            <include
+                android:id="@+id/ic_tc_mp1"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/tc_tv1"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="260dp"
+                layout="@layout/minus_and_plus"></include>
+
+            <TextView
+                android:id="@+id/tc_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="浴室数量"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@+id/tc_tv1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <include
+                android:id="@+id/ic_tc_mp2"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/tc_tv2"
+                android:layout_below="@+id/ic_tc_mp1"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="260dp"
+                layout="@layout/minus_and_plus"></include>
+
+            <TextView
+                android:id="@+id/tc_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="厨房数量"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tc_tv2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <include
+                android:id="@+id/ic_tc_mp3"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/tc_tv3"
+                android:layout_below="@+id/ic_tc_mp2"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="260dp"
+                layout="@layout/minus_and_plus"></include>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:orientation="horizontal"
+            android:background="#e6e6e6"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tc_ditan"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:text="是否需要蒸汽清洗地毯"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"/>
+
+            <CheckBox
+                android:id="@+id/cb1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="220dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务备注"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/tc_beizhu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp"
+            android:hint="备注"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务城市"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tc_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请选择任务城市"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#8a8a8a"/>
+
+            <ImageView
+                android:id="@+id/tc_arrowdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrow_down"
+                android:layout_toRightOf="@+id/tc_tv4"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="260dp"/>
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/tc_ettcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="请选择任务地点"
+            android:textSize="15dp"
+            android:drawableLeft="@drawable/mine_address"/>
+
+        <!--高德地图-->
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/tctask_map"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        </com.amap.api.maps2d.MapView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务截止时间"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/et_tdeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请选择时间"
+            android:textSize="15dp"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@mipmap/calendar"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/tc_tpeice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="请输入金额"
+            android:textSize="15dp"
+            android:drawableLeft="@mipmap/dollar1"/>
+
+        <Button
+            android:id="@+id/tc_bdispatchtask"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="发布任务"
+            android:background="@color/darkorange"
+            android:textColor="@color/bg_white"/>
+    </LinearLayout>
+</ScrollView>

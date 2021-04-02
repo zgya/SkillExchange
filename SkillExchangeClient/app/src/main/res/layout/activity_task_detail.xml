@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TaskDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/td_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="任务详情"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:id="@+id/td_line"
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="@android:color/darker_gray" />
+
+        <include
+            android:id="@+id/ic_task_state"
+            layout="@layout/task_state"></include>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <com.jit.zgy.skillexchange.view.CircleImageView
+                android:id="@+id/td_iv_uavatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="28dp"
+                android:src="@drawable/default_personal_image"/>
+
+            <TextView
+                android:id="@+id/td_tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发布者"
+                android:layout_toRightOf="@+id/td_iv_uavatar"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/td_uname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steph/jobs"
+                android:layout_below="@+id/td_tv6"
+                android:layout_toRightOf="@+id/td_iv_uavatar"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/darkorange"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/td_ivaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/td_iv_uavatar"
+                android:src="@drawable/mine_address"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/td_tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/td_ivaddress"
+                android:layout_below="@+id/td_uname"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/td_tvaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/td_tv7"
+                android:text="Manninhham City VIC 3108"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看地图"
+                android:layout_toRightOf="@+id/td_tvaddress"
+                android:layout_below="@+id/td_tv7"
+                android:textColor="@color/orange"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="70dp"/>
+
+            <ImageView
+                android:id="@+id/iv_td1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/task"
+                android:layout_below="@+id/td_tvaddress"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/td_tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务截止时间"
+                android:layout_toRightOf="@id/iv_td1"
+                android:layout_below="@+id/td_tvaddress"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="18dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tp_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2021-5-12 21:30:59"
+                android:layout_below="@+id/td_tv8"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/ic_tdtprice"
+            layout="@layout/task_price" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_td2"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/strip"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv_td2"
+                android:text="任务标题"
+                android:textStyle="bold"
+                android:layout_marginTop="22dp"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:id="@+id/tp_ttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搬家清空"
+                android:layout_below="@+id/iv_td2"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/iv_td3"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/strip"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务描述"
+                android:layout_toRightOf="@+id/iv_td3"
+                android:layout_marginTop="8dp"
+                android:textSize="17dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/td_tdescripotion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_td3"
+                android:text="这是任务详细描述"
+                android:textStyle="bold"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:background="@drawable/tdestv"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"
+                android:textSize="13dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/td_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:textColor="#bfbfbf"
+            android:textSize="13dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_td4"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/strip"
+                android:layout_marginLeft="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任务评论"
+                android:layout_toRightOf="@+id/iv_td4"
+                android:layout_marginTop="8dp"
+                android:textSize="17dp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_td"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp">
+        </ListView>
+
+        <ImageView
+            android:id="@+id/td_printer"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/printer"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/td_tv9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无评论"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</ScrollView>

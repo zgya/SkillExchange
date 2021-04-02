@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:alpha="0.8"
+    tools:context=".activity.DispatchTaskActivity">
+
+    <TextView
+        android:id="@+id/tv_dp1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择分类，发布任务"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:textStyle="bold"/>
+
+    <com.jit.zgy.skillexchange.view.CircleImageView
+        android:id="@+id/civ_dp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="60dp"
+        android:src="@mipmap/trashcan" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清洁打扫"
+        android:layout_below="@+id/civ_dp1"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"/>
+
+    <com.jit.zgy.skillexchange.view.CircleImageView
+        android:id="@+id/civ_dp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@+id/civ_dp1"
+        android:layout_marginLeft="80dp"
+        android:src="@mipmap/jackhammer"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="维修家装"
+        android:layout_below="@+id/civ_dp2"
+        android:layout_marginLeft="187dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"/>
+
+    <com.jit.zgy.skillexchange.view.CircleImageView
+        android:id="@+id/civ_dp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@+id/civ_dp2"
+        android:layout_marginLeft="80dp"
+        android:src="@mipmap/truck"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搬家速递"
+        android:layout_below="@+id/civ_dp3"
+        android:layout_marginLeft="318dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"/>
+
+    <com.jit.zgy.skillexchange.view.CircleImageView
+        android:id="@+id/civ_dp4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/civ_dp1"
+        android:layout_marginLeft="60dp"
+        android:src="@mipmap/calculator"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="会计税务"
+        android:layout_below="@+id/civ_dp4"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"/>
+
+    <com.jit.zgy.skillexchange.view.CircleImageView
+        android:id="@+id/civ_dp5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/design"
+        android:layout_toRightOf="@+id/civ_dp4"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@+id/civ_dp1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设计策划"
+        android:layout_below="@+id/civ_dp5"
+        android:layout_marginLeft="186dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"/>
+
+    <com.jit.zgy.skillexchange.view.CircleImageView
+        android:id="@+id/civ_dp6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/education"
+        android:layout_below="@+id/civ_dp1"
+        android:layout_toRightOf="@id/civ_dp5"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="教育培训"
+        android:textStyle="bold"
+        android:layout_below="@+id/civ_dp6"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="318dp"/>
+
+    <com.jit.zgy.skillexchange.view.CircleImageView
+        android:id="@+id/civ_dp7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/laptop"
+        android:layout_below="@+id/civ_dp4"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IT服务"
+        android:textStyle="bold"
+        android:layout_below="@+id/civ_dp7"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="65dp"/>
+
+    <com.jit.zgy.skillexchange.view.CircleImageView
+        android:id="@+id/civ_dp8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/pram"
+        android:layout_toRightOf="@+id/civ_dp7"
+        android:layout_below="@+id/civ_dp4"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="家政月嫂"
+        android:textStyle="bold"
+        android:layout_below="@+id/civ_dp8"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="187dp"/>
+
+    <com.jit.zgy.skillexchange.view.CircleImageView
+        android:id="@+id/civ_dp9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/dog"
+        android:layout_toRightOf="@+id/civ_dp8"
+        android:layout_below="@+id/civ_dp6"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="宠物寄养"
+        android:textStyle="bold"
+        android:layout_below="@+id/civ_dp9"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="316dp"/>
+
+    <com.jit.zgy.skillexchange.view.CircleImageView
+        android:id="@+id/civ_dp10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/coconut"
+        android:layout_below="@+id/civ_dp7"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="旅游导游"
+        android:layout_below="@+id/civ_dp10"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"/>
+
+    <com.jit.zgy.skillexchange.view.CircleImageView
+        android:id="@+id/civ_dp11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/camera"
+        android:layout_toRightOf="@+id/civ_dp10"
+        android:layout_below="@id/civ_dp7"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="摄影"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/civ_dp11"
+        android:layout_marginLeft="202dp"/>
+
+    <com.jit.zgy.skillexchange.view.CircleImageView
+        android:id="@+id/civ_dp12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/car"
+        android:layout_toRightOf="@+id/civ_dp11"
+        android:layout_below="@id/civ_dp9"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="汽车检修"
+        android:layout_below="@+id/civ_dp12"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="317dp"/>
+
+    <com.jit.zgy.skillexchange.view.CircleImageView
+        android:id="@+id/civ_dp13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/more"
+        android:layout_below="@+id/civ_dp11"
+        android:layout_marginLeft="192dp"
+        android:layout_marginTop="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="其他"
+        android:textStyle="bold"
+        android:layout_below="@+id/civ_dp13"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="200dp"/>
+
+    <ImageView
+        android:id="@+id/civ_dp14"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/civ_dp13"
+        android:src="@mipmap/icons8_x_24"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="50dp"
+        android:clickable="true"/>
+
+</RelativeLayout>

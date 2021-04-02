@@ -1,0 +1,261 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/fm_settings"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/setting"
+            android:layout_marginRight="20dp" />
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_personal_icon"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="39dp"-->
+            <!--android:src="@drawable/default_personal_image" />-->
+        <com.jit.zgy.skillexchange.view.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_personal_icon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="20dp"
+            app:border_color="#00000000"
+            app:border_width="1dip"
+            app:mutate_background="true"
+            app:oval="true"
+            android:src="@drawable/default_personal_image"/>
+
+        <TextView
+            android:id="@+id/tv_uname"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/iv_personal_icon"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Lawrence.Edward" />
+
+        <EditText
+            android:id="@+id/et_uname"
+            android:layout_width="130dp"
+            android:layout_height="41dp"
+            android:layout_below="@+id/iv_personal_icon"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:background="@android:drawable/alert_light_frame"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_uname_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_below="@+id/iv_personal_icon"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/tv_uname"
+            android:src="@drawable/mine_uname_edit" />
+
+        <ImageView
+            android:id="@+id/iv_mine_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_uname"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/mine_address" />
+
+        <TextView
+            android:id="@+id/tv_mine_address"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_uname"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@+id/iv_mine_address"
+            android:gravity="center"
+            android:text="this is the user's current location" />
+
+        <com.jit.zgy.skillexchange.view.RatingBar
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tv_mine_address"
+            android:paddingLeft="90dp"
+            android:paddingTop="15dp"
+            app:starCount="5"
+            app:starEmpty="@drawable/rating_small_empty"
+            app:starFill="@drawable/rating_small_full"
+            app:starHalf="@drawable/rating_small_half"
+            app:starImageSize="15dp"
+            app:starPadding="1dp"
+            app:starStep="2.5"
+            app:stepSize="Half" />
+
+        <TextView
+            android:id="@+id/tv_mine_nevalute"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/tv_mine_address"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="164dp"
+            android:layout_marginRight="164dp"
+            android:gravity="center"
+            android:text="5" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignTop="@+id/tv_mine_nevalute"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/iv_personal_icon"
+            android:layout_toRightOf="@+id/tv_mine_nevalute"
+            android:text="条评论" />
+
+        <TextView
+            android:id="@+id/tv_mine_taskeffect"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/star"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="-4dp"
+            android:gravity="center"
+            android:text="60.0" />
+
+        <TextView
+            android:id="@+id/tv_mine_s2"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/star"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-1dp"
+            android:layout_toEndOf="@+id/iv_mine_address"
+            android:layout_toRightOf="@+id/tv_mine_taskeffect"
+            android:text="%任务完成率" />
+
+        <TextView
+            android:id="@+id/tv_mine_s"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/star"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/tv_mine_s2"
+            android:text="完成过" />
+
+        <TextView
+            android:id="@+id/tv_mine_ntask"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@+id/tv_mine_nevalute"
+            android:layout_toRightOf="@+id/tv_mine_s"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="5" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/star"
+            android:layout_toRightOf="@id/tv_mine_ntask"
+            android:text="个任务" />
+
+        <View
+            android:id="@+id/view_mine_line"
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="290dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tv_mine_skillabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_mine_line"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:text="技能标签"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
+
+        <com.jit.zgy.skillexchange.view.TextViewBorder
+            android:id="@+id/tv_addskill"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_toRightOf="@+id/tv_mine_skillabel"
+            android:layout_below="@+id/view_mine_line"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="+添加"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:id="@+id/ll_mineskill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tv_mine_skillabel"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="13dp">
+
+        </LinearLayout>
+        <View
+            android:id="@+id/view_mine_line2"
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="370dp"
+            android:background="@android:color/darker_gray" />
+
+        <com.jit.zgy.skillexchange.view.TextViewBorder
+            android:id="@+id/tv_daren"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/view_mine_line2"
+            android:layout_marginLeft="140dp"
+            android:text="达人页"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:clickable="true"/>
+
+        <com.jit.zgy.skillexchange.view.TextViewBorder
+            android:id="@+id/tv_customn"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_toRightOf="@+id/tv_daren"
+            android:layout_below="@+id/view_mine_line2"
+            android:text="客户页"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_mine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+
+    </ListView>
+</LinearLayout>

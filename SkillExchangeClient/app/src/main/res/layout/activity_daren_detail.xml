@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DarenDetailActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_darendetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.jit.zgy.skillexchange.view.CircleImageView
+        android:id="@+id/cv_uavatar"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/default_personal_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/tv_unamedd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Stephen.Jobs"
+        android:layout_below="@+id/cv_uavatar"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"/>
+
+     <ImageView
+         android:id="@+id/iv_dd1"
+         android:layout_width="20dp"
+         android:layout_height="20dp"
+         android:src="@drawable/shouye_image_address"
+         android:layout_below="@+id/tv_unamedd"
+         android:layout_toLeftOf="@+id/tv_addresssdd"
+         android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_addresssdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="US.NewYork"
+            android:layout_below="@+id/tv_unamedd"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/bt_chat"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:text="私信"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="45dp"
+            android:background="@drawable/buttonshape"/>
+
+        <Button
+            android:id="@+id/bt_invite"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:text="邀请"
+            android:background="@drawable/buttonshape"
+            android:layout_marginTop="60dp"
+            android:layout_toRightOf="@+id/cv_uavatar"
+            android:layout_marginLeft="65dp"/>
+
+        <ImageView
+            android:id="@+id/iv_strip"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/strip"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/iv_dd1"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关于TA"
+            android:layout_below="@+id/iv_dd1"
+            android:layout_toRightOf="@+id/iv_strip"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_udescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="java高级软件工程师，现任alibaba项目经理，兼职编程培训，包括java、python、Go、C++等。"
+            android:layout_below="@+id/iv_strip"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/skillbg"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+
+        <ImageView
+            android:id="@+id/iv_dd2"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/strip"
+            android:layout_below="@+id/tv_udescription"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TA的技能标签"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/iv_dd2"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tv_udescription"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_skillsdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_dd2"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="45dp"></LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_dd3"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/strip"
+            android:layout_below="@+id/ll_skillsdd"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="TA的认证"
+            android:layout_toRightOf="@+id/iv_dd3"
+            android:textStyle="bold"
+            android:layout_below="@+id/ll_skillsdd"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="28dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_certificationdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/iv_dd3"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="20dp">
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_dd4"
+            android:layout_width="20dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/strip"
+            android:layout_below="@+id/ll_certificationdd"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_dd4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="TA收到的评价"
+            android:layout_toRightOf="@+id/iv_dd4"
+            android:layout_below="@+id/ll_certificationdd"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_dd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="作为达人"
+            android:layout_below="@+id/iv_dd4"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/tv_dd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="作为发布者"
+            android:layout_toRightOf="@+id/tv_dd1"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/iv_dd4"
+            android:layout_marginTop="5dp"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_commentsdd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_dd1"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp">
+
+        <ListView
+            android:id="@+id/lv_evaluation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+        <ImageView
+            android:id="@+id/iv_thumbup"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/thumb_up"
+            android:layout_below="@+id/tv_dd4"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="110dp"/>
+
+        <TextView
+            android:id="@+id/tv_dd5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新手上路，暂无评价哦"
+            android:layout_below="@+id/iv_thumbup"
+            android:layout_marginLeft="75dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="消息"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="全部已读"
+            android:layout_marginRight="20dp"
+            android:clickable="true"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <include
+        android:id="@+id/ic_mtoolbar"
+        layout="@layout/msearchview" />
+
+    <include
+        android:id="@+id/ic_system_message"
+        layout="@layout/system_message"/>
+
+</LinearLayout>

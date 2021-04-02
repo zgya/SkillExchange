@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">SkillExchange</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="tab_menu_shouye">首页</string>
+    <string name="tab_menu_daren">达人</string>
+    <string name="tab_menu_message">消息</string>
+    <string name="tab_menu_mine">我的</string>
+    <string name="add_skill_tv1">添加技能标签后，当含有该标签的任务发布后，你会第一时间收到推送通知。</string>
+    <string name="add_skill_tv2">1.最多可添加5个标签</string>
+    <string name="add_skill_tv3">2.如需及时获得推送，需要打开App推送权限，如果没有打开，请前往手机设置打开App推送权限</string>
+    <string name="add_skill_tv4">3.长按标签可删除标签</string>
+    <string name="add_skill_tv5">想要出现在达人页里？</string>
+    <string name="add_skill_tv6">想要增加可信度？</string>
+    <string name="add_skill_tv7">想要点亮技能达人专属标志？</string>
+    <string name="add_skill_tv8">那就快去认证你的技能吧</string>
+    <string name="td_warning">技能交换提醒你，请勿与他人进行私下交易，否则资金安全和服务质量将无法得到任何保障。（请确保使用技能交换任务平台完成任务交易，任务酬劳才会由技能交换担保交易平台发放至达人）</string>
+
+</resources>

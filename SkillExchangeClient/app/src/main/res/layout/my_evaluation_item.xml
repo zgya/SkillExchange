@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.jit.zgy.skillexchange.view.CircleImageView
+        android:id="@+id/em_uavatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/default_personal_image"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/em_uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MyName"
+        android:layout_toRightOf="@+id/em_uavatar"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="12dp"/>
+
+    <com.jit.zgy.skillexchange.view.RatingBar
+        android:id="@+id/em_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/em_uname"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@+id/em_uavatar"
+        android:layout_marginTop="10dp"
+        app:starCount="5"
+        app:starEmpty="@drawable/rating_small_empty"
+        app:starFill="@drawable/rating_small_full"
+        app:starHalf="@drawable/rating_small_half"
+        app:starImageSize="15dp"
+        app:starPadding="1dp"
+        app:starStep="5"
+        app:stepSize="Half" />
+
+
+    <TextView
+        android:id="@+id/em_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/em_uavatar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:text="这是用户对达人或者对用户的评价"
+        android:textStyle="bold"/>
+</RelativeLayout>

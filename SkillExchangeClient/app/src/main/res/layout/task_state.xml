@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="85dp">
+
+    <ImageView
+        android:id="@+id/td_iv1_orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/right"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/td_iv1_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/right_gray"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/td_tv1"
+        android:layout_width="130dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/td_iv1_gray"
+        android:background="#bfbfbf"/>
+
+    <ImageView
+        android:id="@+id/td_iv1_orange1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/right"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/td_tv1"/>
+
+    <ImageView
+        android:id="@+id/td_iv1_gray1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/right_gray"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/td_tv1"/>
+
+    <TextView
+        android:id="@+id/td_tv2"
+        android:layout_width="130dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/td_iv1_gray1"
+        android:background="#bfbfbf"/>
+
+    <ImageView
+        android:id="@+id/td_iv1_orange2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/right"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/td_tv2"/>
+
+    <ImageView
+        android:id="@+id/td_iv1_gray2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/right_gray"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/td_tv2"/>
+
+    <TextView
+        android:id="@+id/td_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="招标中"
+        android:textStyle="bold"
+        android:layout_below="@id/td_tv1"
+        android:layout_marginTop="18sp"
+        android:textSize="15dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/td_tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已中标"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_below="@+id/td_tv1"
+        android:layout_marginTop="18sp"
+        android:layout_toRightOf="@+id/td_tv3"
+        android:layout_marginLeft="105dp"/>
+
+    <TextView
+        android:id="@+id/td_tv5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已过期"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/td_tv1"
+        android:layout_marginTop="18sp"
+        android:layout_toRightOf="@+id/td_tv4"
+        android:layout_marginLeft="105dp"/>
+</RelativeLayout>
