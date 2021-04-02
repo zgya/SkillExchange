@@ -11,6 +11,6 @@ Tomcat 8.0
 注意： 要修改url地址，改为自己联网的本机ip地址
       修改服务器的语料库地址，本项目在C:\Users\Lenovo\Desktop\cankao\Reduced-fenci目录下，相关代码修改在impl包的JieBaImpl.java下
       有些功能由于时间原因只是做了界面上的展示，后台功能还需完善
-      学校实习项目，代码编写的可能不太规范，根据需要自行取舍。
+      学校android实习项目，代码编写的可能不太规范，根据需要自行取舍。
 	
 
