@@ -11,7 +11,7 @@
  Target Server Version : 50732
  File Encoding         : 65001
 
- Date: 02/04/2021 10:10:26
+ Date: 07/04/2021 09:12:25
 */
 
 SET NAMES utf8mb4;
@@ -92,6 +92,29 @@ INSERT INTO `evaluation` VALUES (1, 8, '合作愉快！', '专业性很强，耐
 INSERT INTO `evaluation` VALUES (2, 9, '老板给的酬劳挺高的，挺人性化的！', '很棒的开发者，效率很高。', 8, 10, 4.5);
 INSERT INTO `evaluation` VALUES (3, 10, '企业不错，期待下一次合作。', '可以很好的完成需求，期待下一次的合作', 9, 12, 5);
 INSERT INTO `evaluation` VALUES (4, 11, '不错，值得推荐！', '做的东西很漂亮，不错', 11, 3, 5);
+
+-- ----------------------------
+-- Table structure for message
+-- ----------------------------
+DROP TABLE IF EXISTS `message`;
+CREATE TABLE `message`  (
+  `mid` int(11) NOT NULL AUTO_INCREMENT,
+  `uid` int(11) NULL DEFAULT NULL,
+  `auid` int(11) NULL DEFAULT NULL,
+  `mcontent` tinytext CHARACTER SET utf8 COLLATE utf8_general_ci NULL,
+  PRIMARY KEY (`mid`) USING BTREE,
+  INDEX `uid`(`uid`) USING BTREE,
+  INDEX `auid`(`auid`) USING BTREE,
+  CONSTRAINT `message_ibfk_1` FOREIGN KEY (`uid`) REFERENCES `userinfo` (`uid`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `message_ibfk_2` FOREIGN KEY (`auid`) REFERENCES `userinfo` (`uid`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_bin ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of message
+-- ----------------------------
+INSERT INTO `message` VALUES (1, 1, 3, '你好！可以帮我个忙吗？');
+INSERT INTO `message` VALUES (2, 3, 1, '我有空，随时为您服务！');
+INSERT INTO `message` VALUES (3, 1, 3, '我有个搬家的任务，不知道你可不可以做？');
 
 -- ----------------------------
 -- Table structure for task
